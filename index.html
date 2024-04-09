@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <div class="progress-bar-container">
+    <div class="progress-bar"></div>
+  </div>
+
+  <div class="content">
+    <div class="heading">Which describes you best?</div>
+    <div class="subheading"><span style="color: grey;">This will help us personalize your experience.</span></div>
+    <div class="options">
+      <div class="option-box"><img src="img\student.png" alt="Image"><input type="checkbox" id="student" hidden><label
+          for="student" onclick="selectOption(this)"> <strong>Student</strong> or soon to be enrolled</label></div>
+      <div class="option-box"><img src="img\professional.png" alt="Image"><input type="checkbox" id="professional"
+          hidden><label for="professional" onclick="selectOption(this)"> <strong>Professional</strong> pursuing a
+          career</label></div>
+      <div class="option-box"><img src="img\parent.png" alt="Image"><input type="checkbox" id="parent" hidden><label
+          for="parent" onclick="selectOption(this)"> <strong>Parent</strong> of a school-age child</label></div>
+      <div class="option-box"><img src="img\LifeLong.png" alt="Image"><input type="checkbox" id="lifelong-learner"
+          hidden><label for="lifelong-learner" onclick="selectOption(this)"> <strong>Lifelong Learner</strong></label>
+      </div>
+      <div class="option-box"><img src="img\Teacher.png" alt="Image"><input type="checkbox" id="teacher" hidden><label
+          for="teacher" onclick="selectOption(this)"> <strong>Teacher</strong></label></div>
+      <div class="option-box"><img src="img\Other.png" alt="Image"><input type="checkbox" id="other" hidden><label
+          for="other" onclick="selectOption(this)"> <strong>Other</strong></label></div>
+    </div>
+    <button class="continue-button" id="continueButton" onclick="nextPage()"
+      onmouseover="changeButtonColor(this)">Continue</button>
+  </div>
+
+  <div class="second-page">
+    <div class="heading">Which are you most interested in?</div>
+    <div class="subheading"><span style="color: grey;">Choose just one. This will help us get you started (but won't
+        limit your experience).</span></div>
+    <div class="options">
+      <div class="option-box"><img src="img\Page2Option1.png" alt="Image"><input type="checkbox" id="student"
+          hidden><label for="student" onclick="secondSelectOption(this)">Learning specific skills to advance my
+          career</label></div>
+      <div class="option-box"><img src="img\Page2Option2.png" alt="Image"><input type="checkbox" id="professional"
+          hidden><label for="professional" onclick="secondSelectOption(this)">Exploring new topics I'm interested
+          in</label></div>
+      <div class="option-box"><img src="img\Page2Option3.png" alt="Image"><input type="checkbox" id="parent"
+          hidden><label for="parent" onclick="secondSelectOption(this)">Refreshing my math foundations</label></div>
+      <div class="option-box"><img src="img\Page2Option4.png" alt="Image"><input type="checkbox" id="lifelong-learner"
+          hidden><label for="lifelong-learner" onclick="secondSelectOption(this)">Exercising my brain to stay
+          sharp</label></div>
+      <div class="option-box"><img src="img\Page2Option5.png" alt="Image"><input type="checkbox" id="teacher"
+          hidden><label for="teacher" onclick="secondSelectOption(this)">Something else</label></div>
+    </div>
+    <button class="continue-button" id="secondContinueButton" onclick="secondNextPage()"
+      onmouseover="changeButtonColor(this)">Continue</button>
+  </div>
+
+  <div class="third-page">
+    <div class="third-content">
+      <img src="img\ThirdImage.png" alt="Right Place Image">
+      <div class="content">
+        <div class="heading" style="font: size 100px;;">You’re in the right place</div> <br>
+        <div class="subheading" style="font-size: large;">Brillant gets you hands-on to help improve your professional
+          skills and knowledge. You’ll interact with concepts and solve fun problems in math, science, and computer
+          science.</div>
+        <button class="continue-button" onclick="thirdNextPage()"
+          onmouseover="changeButtonColor(this)">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="fourth-page">
+    <div class="content">
+      <div class="heading"><strong>What is your math comfort level?</strong></div>
+      <div class="subheading" style="font-size: small; color: grey; font-size: larger;">Choose the highest level you
+        feel confident in - you can always adjust later.</div><br>
+
+      <div class="option-box-fourth">
+        <div class="option option-1">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mn>5</mn>
+              <mo>&times;</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+              <mo>=</mo>
+              <mrow>
+                <mn>?</mn>
+              </mrow>
+            </mrow>
+          </math><br><br>
+          <b>Arithmetic</b>
+          <span style="color:#5c5959; font-size: small;">Introductory</span>
+        </div>
+        <div class="option option-2">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mn>3</mn>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mn>5</mn>
+              <mo>=</mo>
+              <mn>4</mn>
+            </mrow>
+          </math><br><br>
+          <b>Basic Algebra</b>
+          <span style="color:#5c5959; font-size: small;">Foundational</span>
+        </div>
+        <div class="option option-3">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>x</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mo>&#x2212;</mo>
+                  <mi>b</mi>
+                  <mo>&#x00B1;</mo>
+                  <msqrt>
+                    <msup>
+                      <mi>b</mi>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>&#x2212;</mo>
+                    <mn>4</mn>
+                    <mi>a</mi>
+                    <mi>c</mi>
+                  </msqrt>
+                </mrow>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>a</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </math><br>
+          <b>Intermediate Algebra</b>
+          <span style="color:#5c5959; font-size: small;">Intermediate</span>
+        </div>
+        <div class="option option-4">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <msubsup>
+                <mo>&#x222B;</mo>
+                <mn>0</mn>
+                <mi>l</mi>
+              </msubsup>
+              <msup>
+                <mi>x</mi>
+                <mn>2</mn>
+              </msup>
+              <mi>dx</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mi>l</mi>
+                  <msup>
+                    <mi>l</mi>
+                    <mn>3</mn>
+                  </msup>
+                </mrow>
+                <mn>3</mn>
+              </mfrac>
+            </mrow>
+          </math><br>
+          <b>Calculus</b>
+          <span style="color:#5c5959; font-size: small;">Advanced</span>
+        </div>
+      </div>
+      <button class="continue-button continue-button-fourth">Continue</button>
+    </div>
+  </div>
+
+  <div class="fifth-page">
+    <div class="third-content">
+      <img src="img\FifthImage.png" alt="Right Place Image">
+      <div class="content">
+        <div class="heading">You're on your way!!</div> <br>
+        <div class="subheading">⭐⭐⭐⭐⭐</div>
+        <div class="subheading" style="font-size: large;"><i>"Through its engaging and well-structured courses,
+            Brilliant has taught me mathematical concepts that I previously struggled to understand. I now feel
+            confident approaching both technical job interviews and real-world problem-solving situations." - Jacob
+            S.</i></div>
+        <button class="continue-button" onclick="fifthNextPage()">Continue</button>
+      </div>
+    </div>
+  </div>
+<script src="script1.js"></script>
+</body>
+
+</html>
