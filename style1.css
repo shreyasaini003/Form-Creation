@@ -1,0 +1,278 @@
+body {
+  background: #eef1f3;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 16px; /* Decreased font size */
+}
+
+.progress-bar-container {
+  width: calc(100% - 20px); /* Adjust width as needed */
+  height: 8px; /* Adjust thickness */
+  background-color: #ccc; /* Background color of the progress bar */
+  border-radius: 4px; /* Rounded corners */
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.progress-bar {
+  width: 0%; /* Set initial width to 0 */
+  height: 100%;
+  background-color: #75b800; /* Color of the filled portion of the progress bar */
+  transition: width 0.5s ease; /* Smooth transition animation */
+}
+.progress-bar-container {
+position: relative;
+width: calc(100% - 40px); /* Adjusted width with more space */
+height: 8px; /* Adjusted thickness */
+background-color: #ccc; /* Background color of the progress bar */
+border-radius: 4px; /* Rounded corners */
+overflow: hidden;
+margin-top: 20px; /* Added margin from the top */
+margin-left: auto; /* Center the loading bar */
+margin-right: auto; /* Center the loading bar */
+}
+
+.progress-bar {
+position: absolute;
+top: 0;
+left: 0;
+width: 0%; /* Set initial width to 0 */
+height: 100%;
+background-color: #75b800; /* Color of the filled portion of the progress bar */
+transition: width 0.5s ease; /* Smooth transition animation */
+}
+
+
+.content {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  animation: slideFromRightToLeft 0.5s ease both;
+}
+
+@keyframes slideFromRightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.heading {
+  font-size: 36px; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subheading {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: grey; 
+  position: relative;/* Adjust text color for the second line */
+}
+
+.options {
+  margin-top: 20px;
+  text-align: center; /* Center the options */
+}
+
+.option-box {
+  margin-bottom: 20px;
+  position: relative;
+  width: 450px; /* Set width of option boxes */
+  margin-left: auto; /* Center the option boxes */
+  margin-right: auto; /* Center the option boxes */
+}
+
+.option-box label {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px; /* Decreased font size */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+  padding-left: 60px; /* Adjust padding to accommodate the image */
+  text-align: left; /* Align content to the left */
+}
+
+.option-box img {
+  width: 40px; /* Increase image width */
+  height: auto;
+  position: absolute;
+  left: 10px; /* Adjust left position */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.option-box label:hover {
+  border-color: black; /* Change border color on hover */
+}
+
+.continue-button {
+  background-color: grey;
+  color: white;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.continue-button:hover, .continue-button:focus {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+/* Styles for second page */
+.second-page, .third-page, .fourth-page, .fifth-page {
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  animation: slideFromRightToLeft 0.5s ease both;
+}
+
+/* Styles for third page */
+.third-page, .fifth-page {
+  display: none;
+  text-align: center;
+  position: relative;
+  animation: slideFromRightToLeft 0.5s ease both;
+}
+
+@keyframes slideFromRightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.option-box:hover {
+border-color: black; /* Change background color on hover */
+}
+
+
+.third-content, .fifth-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 10vh; /* Adjusted margin-top */
+}
+
+.third-content img, .fifth-content img {
+  width: 25%; /* Adjusted image size */
+  height: auto;
+  margin-right: 20px;
+}
+
+.third-content .content, .fifth-content .content {
+  width: 50%; /* Adjusted content width */
+  font-size: 14px; /* Adjusted font size */
+}
+
+.option-box-fourth {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this line to vertically center the content */
+  margin-top: 30px;
+}
+
+.option {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 20px; /* Adjusted padding */
+  margin: 0 10px;
+  transition: background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: border-color 0.3s;
+ /* Adjusted width for each option box */
+  text-align: center;
+  
+/* Existing styles */
+width: 150px; /* Adjusted width for each option box */
+height: 150px; /* Adjusted height for each option box */
+/* Remaining existing styles */
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+
+  
+}
+
+.option math, .option b, .option span {
+  margin-bottom: 15px; /* Add margin-bottom to create a one-line gap */
+}
+
+.option:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+  z-index: -1;
+}
+
+.option:hover:before,
+.option.active:before {
+  transform: scaleX(1);
+  transform-origin: left;
+  border-right-color: r;
+  border-right-color: yellow;
+  transition: border-color 0.3s;
+}
+
+.option.active {
+  border: 2px solid rgb(229, 201, 17);
+}
+
+.option:hover {
+  border-color: rgb(229, 201, 17);
+}
+
+.option.active::after,
+.option:hover::after {
+  border-color: rgb(229, 201, 17);
+  border-radius: 5px;
+}
+
+.continue-button-fourth {
+  background-color: grey;
+  color: white;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-size: 18px;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.continue-button-fourth.active,
+.continue-button-fourth:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}

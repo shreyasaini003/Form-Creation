@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <div class="loading-circle-container">
+    <div class="loading-circle"></div>
+    <div class="center-text">Finding learning path recommendations for you based on your responses</div>
+  </div>
+
+  <div class="learning-page">
+    <div class="content">
+      <div class="title">Learning Paths based on your answers</div>
+      <div class="subtitle">Choose one to get started. You can switch anytime.</div>
+      <br>
+      <div class="box-container">
+        <div class="box" onclick="changeBorderColor(this)">
+          <div class="most-popular">Most Popular</div>
+          <div class="box-content">
+            <b>Foundational Math</b><br>
+            Build your foundational skills in algebra, geometry, and probability.
+          </div>
+          <img src="img\result.gif" alt="Mathematical Thinking Image">
+        </div>
+        <div class="box" onclick="changeBorderColor(this)">
+          <div class="box-content">
+            <b>Mathematical Thinking</b><br>
+            Build your foundational skills in algebra, geometry, and probability.
+          </div>
+          <img src="img\result.gif" alt="Mathematical Thinking Image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script2.js"></script>
+
+
+</body>
+
+</html>
