@@ -33,6 +33,4 @@ You can try out the form live [here](https://shreyasaini003.github.io/Form-Creat
 
 Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
